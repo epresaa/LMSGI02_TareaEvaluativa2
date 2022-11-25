@@ -1,0 +1,151 @@
+<!-- Edurne Presa Angulo - Lenguaje de marcas y sistemas de gestión de la información - DAW 
+ Unidad 2 - Tarea Evaluativa 2 -->
+<!-- Este sitio web está compuesto por 25 páginas: index, contacto, noticias, categorías, una por categoría (cuatro en total), una por 
+    cada mujer cuya vida se ha contado (16 en total) y la página próximamente.
+    El sitio web muestra en papel de la mujer en la historia de las ciencias y las tecnologías -->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Contacto</title> 
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <meta charset="UTF-8">
+    <meta name="description" content="Historia mujeres Ciencias Tecnología contacto">
+    <meta name="keywords" content="historia, ciencia, tecnología, mujer, actualidad, contacto">
+    <meta name="author" content="Edurne Presa Angulo">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <!--Título del sitio: presente en todas las páginas siempre en el mismo sitio-->
+    <header class="titulo">
+        <h1>HISTORIA DE LA MUJER EN LAS CIENCIAS Y LA TECNOLOGÍA</h1>
+    </header>
+
+    <!--Barra de navegación: presente en todas las páginas siempre en el mismo sitio-->
+    <nav class="navbar">
+        <a class="navbar-item" href="../index.html">Página Principal</a>
+        <a class="navbar-item" href="noticias.html">Noticias</a>
+        <a class="navbar-item" href="categorias.html">Categorías</a>
+        <a class="navbar-item" href="contacto.html">Contacto</a>
+    </nav>
+
+    <!--Contenedor flex en el que se encuentra todo el contenido de la página-->
+    <div class="contenido">
+
+        <!--Contenido principal de la página de contacto: presentación y formulario-->
+        <main class="cuerpo-contacto">
+            <div class="contacto">
+                <section>
+                    <h2>Contacta con nosotras</h2><hr class="subrayado-h2">
+                    <p>¡Necesitamos tu ayuda!</p>
+                    <p>Es importante resaltar el papel de la mujer en las ciencias y tecnologías en la historia; pero es igual de importante resaltar su papel en 
+                        la actualidad. La mujer sigue estando infrarrepresentada el los puestos de trabajo relacionados con las ciencias y la tecnología , pero hay muchas mujeres 
+                        que hoy en día están cambiando el mundo a través de sus estudios y descubrimientos.</p>
+                    <p>Por todo esto, estamos trabajando en una nueva web en la que seguiremos los objetivos de esta, pero enfocándonos en el ahora.</p>
+                    <p>Si quieres que incluyamos a alguna mujer que te inspire, a la que admires, o a la que creas que deberíamos conocer, no dudes en rellenar este 
+                        formulario. Además te avisaremos cuando la nueva web esté en marcha.</p>
+                    <p>¡Gracias por vuestras contribuciones!</p>
+                </section>
+                
+                <!--Formulario de contacto para proponer los trabajos de otras mujeres-->
+                <form class="formulario-contacto" action="mailto:epresa@birt.eus" method="get">
+                    <fieldset>
+                        <legend>Datos de contacto</legend>
+                        <div class="form-flex-container">
+                            <div class="fila">
+                                <label for="nombre">Nombre </label>
+                                <input id="nombre" type="text" name="nombre">
+                            </div>
+                            <div class="fila">
+                                <label for="apellidos">Apellidos </label>
+                                <input id="apellidos" type="text" name="apellidos">
+                            </div>
+                            <div class="fila">
+                                <label for="email">Email </label>
+                                <input id="email" type="email" name="email">
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Mi propuesta</legend>
+                        <div class="form-flex-container">
+                            <div class="fila">
+                                <label for="campo">Campo de estudio</label>
+                                <input list="campos" name="campo" id="campo" placeholder="Selecciona o sugiere un nuevo campo">
+                                <datalist id="campos">
+                                    <option value="Computación: Software">
+                                    <option value="Computación: Hardware">
+                                    <option value="Ciencias, Matemáticas, Ingeniería">
+                                    <option value="Medicina y Enfermería">
+                                </datalist>
+                            </div>
+                            <div class="fila">
+                                <label for="trabajos">Trabajos</label>
+                                <textarea name="trabajos" id="trabajos" rows="15" cols="70" placeholder="Escribe aquí el nombre de una mujer a la que te gustaría ver en nuestra web, así como alguno de sus trabajos que quieras destacar o enlaces en los que podamos encontrarla."></textarea>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="button">
+                        <button>Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+
+        <!--Barra a un lado: navegación a la nueva web en construcción y a las RRSS-->
+        <aside class="aside-contacto">
+            <section class="proximamente">
+                <h2>Próximamente</h2>
+                <p>Visita nuestra nueva web:</p>
+                <a class="nueva-web" href="../html/categorias/mujeresactualidad.html" target="_blank">
+                    <p >Mujeres en las ciencias y la tecnología</p>
+                </a>
+                <p>Muy pronto estará disponible</p>
+                <p>¡Síguenos en nuestras redes sociales para no perderte las novedades!</p>
+            </section>
+
+            <div class="contenedor-filler">
+                <span class="filler">·</span>
+                <span class="filler">·</span>
+                <span class="filler">·</span>
+                <span class="filler">·</span>
+            </div>
+
+            <section class="suigenos-rrss">
+                <h2>Síguenos en RRSS</h2>
+                <div class="iconos">
+                    <div class="iconos-linea1">
+                        <div class="rrss twitter">
+                            <a href="https://twitter.com/" class="fa fa-twitter"></a>
+                        </div>
+                        <div class="rrss instagram">
+                            <a href="https://instagram.com/" class="fa fa-instagram"></a>
+                        </div>
+                    </div>
+                    <div class="iconos-linea2">
+                        <div class="rrss facebook">
+                            <a href="https://facebook.com/" class="fa fa-facebook"></a>
+                        </div>
+                        <div class="rrss tumblr">
+                            <a href="https://tumblr.com/" class="fa fa-tumblr"></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </aside>
+    </div>
+
+    <!--Pie de página: presente al final de todas las páginas-->
+    <footer class="footer">
+        <p>Autora: Edurne Presa Angulo</p>
+        <p>Encuéntrame en <a href="https://www.linkedin.com/in/edurne-presa-angulo-954640251/" target="_blank">Linkedin</a></p>
+    </footer>
+        
+</body>
+
+</html>

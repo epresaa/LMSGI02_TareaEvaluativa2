@@ -1,0 +1,136 @@
+<!-- Edurne Presa Angulo - Lenguaje de marcas y sistemas de gestión de la información - DAW 
+ Unidad 2 - Tarea Evaluativa 2 -->
+<!-- Este sitio web está compuesto por 25 páginas: index, contacto, noticias, categorías, una por categoría (cuatro en total), una por 
+    cada mujer cuya vida se ha contado (16 en total) y la página próximamente.
+    El sitio web muestra en papel de la mujer en la historia de las ciencias y las tecnologías -->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Noticias y Actualidad</title> 
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <meta charset="UTF-8">
+    <meta name="description" content="Historia mujeres Ciencias Tecnología Noticias Actualidad">
+    <meta name="keywords" content="historia, ciencia, tecnología, mujer, noticias, actualidad">
+    <meta name="author" content="Edurne Presa Angulo">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <!--Título del sitio: presente en todas las páginas siempre en el mismo sitio-->
+    <header class="titulo">
+        <h1>HISTORIA DE LA MUJER EN LAS CIENCIAS Y LA TECNOLOGÍA</h1>
+    </header>
+
+    <!--Barra de navegación: presente en todas las páginas siempre en el mismo sitio-->
+    <nav class="navbar">
+        <a class="navbar-item" href="../index.html">Página Principal</a>
+        <a class="navbar-item" href="noticias.html">Noticias</a>
+        <a class="navbar-item" href="categorias.html">Categorías</a>
+        <a class="navbar-item" href="contacto.html">Contacto</a>
+    </nav>
+
+    <!--Contenedor flex en el que se encuentra todo el contenido de la página-->
+    <div class="contenido">
+
+        <!--Contenido principal de la página: las noticias-->
+        <main class="cuerpo-noticias">
+            <section class="noticias-titulo">
+                <h2>Noticias</h2><hr class="subrayado-h2">
+            </section>
+            <!--Cada div de class noticia contiene una noticia con su titular, fecha, texto y botón de leer más-->
+            <div class="noticia">
+                <img class="img--noticia" src="../media/pag-noticias/noticia-1.jpg" alt="Mujer de espaldas">
+                <article class="contenido--noticia">
+                    <h4>Siete mujeres matemáticas de la historia, de Alejandría a A Coruña</h4>
+                    <p class="fecha-medio"> <abbr title="Radio Televisión Española">RTVE</abbr>, 12/05/2022</p>
+                    <p>El Día Internacional de las Mujeres Matemáticas se celebra cada 12 mayo, el día de nacimiento de la matemática iraní y profesora en la Universidad de 
+                        Santford Maryam Mirzajani. Fue la primera mujer en recibir la Medalla Fields, está considerado el premio Nobel de matemáticas. Repasamos las biografías 
+                        de distintas mujeres matemáticas de la historia.</p>
+                    <a target="_blank" href="https://www.rtve.es/noticias/20220512/mujeres-matematicas-historia/2347619.shtml">Leer más</a>
+                </article>
+            </div>
+            <div class="noticia">
+                <img class="img--noticia" src="../media/pag-noticias/noticia-4.jpg" alt="Ada Lovelace">
+                <article class="contenido--noticia">
+                    <h4>Quién fue Ada Lovelace, la mujer con “cabeza de hombre” que inventó el algoritmo</h4>
+                    <p class="fecha-medio">Perfil, 08/10/2022</p>
+                    <p>Idola de las mujeres STEM, las que eligen las ciencias duras como profesión, la hija que Lord Byron abandonó porque lo “decepcionó” al no haber nacido varón, 
+                        rompió los prejuicios de su clase, en la Gran Bretaña victoriana. Creó el algoritmo a partir de la máquina para tejer Jacquard y, aun mujer, sentó las bases 
+                        para programar computadoras, cuando aún no existían.</p>
+                    <a target="_blank" href="https://www.perfil.com/noticias/sociedad/quien-fue-ada-lovelace-la-mujer-con-cabeza-de-hombre-que-invento-el-algoritmo.phtml">Leer más</a>
+                </article>    
+            </div>
+            <div class="noticia">
+                <img class="img--noticia" src="../media/pag-noticias/noticia-2-dest.jpg" alt="Mujeres en una reunión">
+                <article class="contenido--noticia">
+                    <h4>80 mujeres rurales se forman en nuevas tecnologías</h4>
+                    <p class="fecha-medio">Andalucía Información, 14/10/2022</p>
+                    <p>La vicepresidenta tercera de la Diputación, Carmen Collado, y la diputada de Empleo, además de edil arcense, Ana Carrera, inauguraban la jornada ‘Poderío 
+                        Digital’ en la Junta de los Ríos de Arcos, organizada por la Federación Ceres y financiada por el área de Igualdad en torno a la celebración del Día 
+                        Mundial de la Mujer Rural.</p>
+                    <a target="_blank" href="https://andaluciainformacion.es/arcos/1090416/80-mujeres-rurales-se-forman-en-nuevas-tecnologias/">Leer más</a>
+                </article>            
+            </div>
+            <div class="noticia">
+                <img class="img--noticia" src="../media/pag-noticias/noticia-3.jpg" alt="Yvonne Barr">
+                <article class="contenido--noticia">
+                    <h4>La mujer anónima que descubrió el virus cancerígeno presente en el 95% de las personas</h4>
+                    <p class="fecha-medio">El País, 21/10/2022</p>
+                    <p>Una profesora de instituto, Yvonne Balding, murió hace seis años en Australia sin que trascendiera la noticia. Casi nadie sabía que aquella anónima maestra 
+                        de matemáticas era en realidad Yvonne Barr —su nombre de soltera—, la codescubridora del virus de Epstein-Barr, un organismo que es culpable de la enfermedad 
+                        del beso, de la esclerosis múltiple e incluso de algunos tumores.</p>
+                    <a target="_blank" href="https://elpais.com/ciencia/2022-10-21/la-mujer-anonima-que-descubrio-el-virus-cancerigeno-presente-en-el-95-de-las-personas.html">Leer más</a>
+                </article> 
+            </div>
+            <div class="noticia">
+                <img class="img--noticia" src="../media/pag-noticias/noticia-5-ult.jpg" alt="Mujer inventora">
+                <article class="contenido--noticia">
+                    <h4>Por qué ellas inventan y no lo sabemos</h4>
+                    <p class="fecha-medio">La Sexta, 08/11/2022</p>
+                    <p>En España, una de cada cuatro inventores es mujer, un dato todavía lejano de la paridad pero que refleja la lucha de muchas inventoras por abrirse camino. En 
+                        la actualidad, nuestro país se sitúa entre los territorios con mayor porcentaje de inventoras de toda Europa. Muchas de ellas se han visto obligadas a 
+                        marcharse de España e investigar en otros lugares ante la falta de apoyo institucional.</p>
+                    <a target="_blank" href="https://www.lasexta.com/noticias/ciencia-tecnologia/que-ellas-inventan-sabemos-uno-cada-cuatro-inventos-espana-realizado-mujer_20221108636a821aac67a20001ae3871.html">Leer más</a>
+                </article>
+            </div>
+        </main>
+
+        <!--Barra a un lado: para navegación rápida a las categorías-->    
+        <aside class="aside">
+            <h2>Categorías</h2>
+            <div class="campo--index">
+                <a href="../html/categorias/software.html">
+                    <img src="../media/pag-categorias/software.jpg" alt="">
+                </a>
+            </div>
+            <div class="campo--index">
+                <a href="../html/categorias/hardware.html">
+                    <img src="../media/pag-categorias/hardware.jpg" alt="">
+                </a>
+            </div>
+            <div class="campo--index">
+                <a href="../html/categorias/ciencias.html">
+                    <img src="../media/pag-categorias/ciencia.jpg" alt="">
+                </a>
+            </div>
+            <div class="campo--index">
+                <a href="../html/categorias/medicina.html">
+                    <img src="../media/pag-categorias/medicina.jpg" alt="">
+                </a>
+            </div>
+        </aside>  
+    </div>
+
+    <!--Pie de página: presente al final de todas las páginas-->
+    <footer class="footer">
+        <p>Autora: Edurne Presa Angulo</p>
+        <p>Encuéntrame en <a href="https://www.linkedin.com/in/edurne-presa-angulo-954640251/" target="_blank">Linkedin</a></p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+<!-- Edurne Presa Angulo - Lenguaje de marcas y sistemas de gestión de la información - DAW 
+ Unidad 2 - Tarea Evaluativa 2 -->
+<!-- Este sitio web está compuesto por 25 páginas: index, contacto, noticias, categorías, una por categoría (cuatro en total), una por 
+    cada mujer cuya vida se ha contado (16 en total) y la página próximamente.
+    El sitio web muestra en papel de la mujer en la historia de las ciencias y las tecnologías -->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Medicina y Enfermería</title> 
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <meta charset="UTF-8">
+    <meta name="description" content="Historia mujeres Medicina Enfermería">
+    <meta name="keywords" content="historia, ciencia, medicina, enfermería, mujer">
+    <meta name="author" content="Edurne Presa Angulo">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <!--Título del sitio: presente en todas las páginas siempre en el mismo sitio-->
+    <header class="titulo">
+        <h1>HISTORIA DE LA MUJER EN LAS CIENCIAS Y LA TECNOLOGÍA</h1>
+    </header>
+    
+    <!--Barra de navegación: presente en todas las páginas siempre en el mismo sitio-->
+    <nav class="navbar">
+        <a class="navbar-item" href="/index.html">Página Principal</a>
+        <a class="navbar-item" href="/html/noticias.html">Noticias</a>
+        <a class="navbar-item" href="/html/categorias.html">Categorías</a>
+        <a class="navbar-item" href="/html/contacto.html">Contacto</a>
+    </nav>
+    
+    <!--Contenido principal de la página-->
+    <main class="categoria-container">
+
+        <!--Presentación: explicación de la categoría-->
+        <section class="categoria-presentacion">
+            <h2 class="titulo-cat">Medicina y Enfermería</h2>
+            <div class="contenido-categoria">
+                <img class ="img-categoria" src="../../media/pag-categorias/medicina-pagina.jpg" alt="medicina">
+                <div class="categoria-texto">
+                    <p>La palabra <i>medicina</i> proviene del latín medicina, derivado a su vez de mederi, que significa “curar”, “medicar”.</p>
+                    <p class="definicion"><q>Es la ciencia de la salud dedicada a la prevención, diagnóstico, pronóstico y tratamiento de las enfermedades, 
+                        lesiones y problemas de salud de los seres humanos.</q></p>
+                    <p>La medicina se ha practicado desde la época prehistórica, durante la mayor parte de la cual era un arte (un área de habilidad y conocimiento) 
+                        que frecuentemente tenía conexiones con las creencias religiosa y filosófica de la cultura local.</p>
+                    <p class="fuente"><a href="https://es.wikipedia.org/wiki/Medicina" target="_blank"> Fuente: Artículo de Wikipedia sobre la Medicina </a></p>
+                    <p>La palabra <i>enfermería</i> proviene del latín in-, “negación” y firmus, “fuerte”.</p>
+                    <p class="definicion"><q>Es la disciplina que se dedica al cuidado y atención de enfermos y heridos, así como a otras tareas de asistencia sanitarias, 
+                        clínicas y a la promoción de la salud y prevención de la enfermedad.</q></p>
+                    <p>Contrariamente a la percepción general, en su origen es un campo exclusivamente dominado por hombres durante mucho tiempo.</p>
+                    <p class="fuente"><a href="https://es.wikipedia.org/wiki/Enfermería" target="_blank"> Fuente: Artículo de Wikipedia sobre la Enfermería </a></p>
+                    <p>Si bien se pueden encontrar pruebas en la historia que apuntan a la presencia de la mujer en la medicina, no es hasta el siglo XIX cuando las 
+                        mujeres consiguen ser reconocidas en lo que hoy en día se considera la medicina moderna.  Por otro lado, la existencia de la enfermería como la 
+                        conocemos hoy, es tal gracias al trabajo de las mujeres durante ese mismo período.</p>
+                </div>
+            </div>
+        </section>
+        
+        <div>
+            <hr class="separacion">
+        </div>    
+        
+        <!--Enlaces a los perfiles de las cuatro mujeres estudiadas en esta categoría-->
+        <div class="categoria-main">
+            <a href="/html/categorias/medicina/florencenightingale.html">
+                <figure class="perfil">
+                    <img class="fotoperfil" src="/media/pag-categorias/medicina/FlorenceNightingale.jpg" alt="Florence Nightingale">
+                    <figcaption class="pie-fotoperfil">Florence Nightingale</figcaption>
+                </figure>
+            </a>
+            <a href="/html/categorias/medicina/elizabethblackwell.html">
+                <figure class="perfil">
+                    <img class="fotoperfil" src="/media/pag-categorias/medicina/ElizabethBlackwell.jpg" alt="Elizabeth Blackwell">
+                    <figcaption class="pie-fotoperfil">Elizabeth Blackwell</figcaption>
+                </figure>
+            </a>
+            <a href="/html/categorias/medicina/dolorsaleuiriera.html">
+                <figure class="perfil">
+                    <img class="fotoperfil" src="/media/pag-categorias/medicina/DolorsAleuRiera.jpg" alt="Dolors Aleu Riera">
+                    <figcaption class="pie-fotoperfil">Dolors Aleu Riera</figcaption>
+                </figure>
+            </a>
+            <a href="/html/categorias/medicina/margaretsanger.html">
+                <figure class="perfil">
+                    <img class="fotoperfil" src="/media/pag-categorias/medicina/MargaretSanger.jpg" alt="Margaret Sanger">
+                    <figcaption class="pie-fotoperfil">Margaret Sanger</figcaption>
+                </figure>
+            </a>
+        </div>
+    </main>
+
+    <!--Enlace para volver atrás: a la página de categorías-->
+    <div class="atras">    
+        <a href="/html/categorias.html"><p>Volver a categorías</p></a>
+    </div>
+
+    <!--Pie de página: presente al final de todas las páginas-->
+    <footer class="footer">
+        <p>Autora: Edurne Presa Angulo</p>
+        <p>Encuéntrame en <a href="https://www.linkedin.com/in/edurne-presa-angulo-954640251/" target="_blank">Linkedin</a></p>
+    </footer>
+
+</body>
+
+</html>
