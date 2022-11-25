@@ -27,26 +27,26 @@
 
     <!--Barra de navegación: presente en todas las páginas siempre en el mismo sitio-->
     <nav class="navbar">
-        <a class="navbar-item" href="../index.html">Página Principal</a>
-        <a class="navbar-item" href="noticias.html">Noticias</a>
-        <a class="navbar-item" href="categorias.html">Categorías</a>
-        <a class="navbar-item" href="contacto.html">Contacto</a>
+        <a class="navbar__item" href="../index.html">Página Principal</a>
+        <a class="navbar__item" href="noticias.html">Noticias</a>
+        <a class="navbar__item" href="categorias.html">Categorías</a>
+        <a class="navbar__item" href="contacto.html">Contacto</a>
     </nav>
 
     <!--Contenedor flex en el que se encuentra todo el contenido de la página-->
     <div class="contenido">
 
         <!--Contenido principal de la página: las noticias-->
-        <main class="cuerpo-noticias">
-            <section class="noticias-titulo">
+        <main class="contenido__cuerpo">
+            <section class="contenido__cuerpo--titulo">
                 <h2>Noticias</h2><hr class="subrayado-h2">
             </section>
             <!--Cada div de class noticia contiene una noticia con su titular, fecha, texto y botón de leer más-->
             <div class="noticia">
-                <img class="img--noticia" src="../media/pag-noticias/noticia-1.jpg" alt="Mujer de espaldas">
-                <article class="contenido--noticia">
+                <img class="noticia__img" src="../media/pag-noticias/noticia-1.jpg" alt="Mujer de espaldas">
+                <article class="noticia__contenido">
                     <h4>Siete mujeres matemáticas de la historia, de Alejandría a A Coruña</h4>
-                    <p class="fecha-medio"> <abbr title="Radio Televisión Española">RTVE</abbr>, 12/05/2022</p>
+                    <p class="noticia__contenido--fecha"> <abbr title="Radio Televisión Española">RTVE</abbr>, 12/05/2022</p>
                     <p>El Día Internacional de las Mujeres Matemáticas se celebra cada 12 mayo, el día de nacimiento de la matemática iraní y profesora en la Universidad de 
                         Santford Maryam Mirzajani. Fue la primera mujer en recibir la Medalla Fields, está considerado el premio Nobel de matemáticas. Repasamos las biografías 
                         de distintas mujeres matemáticas de la historia.</p>
@@ -54,21 +54,21 @@
                 </article>
             </div>
             <div class="noticia">
-                <img class="img--noticia" src="../media/pag-noticias/noticia-4.jpg" alt="Ada Lovelace">
-                <article class="contenido--noticia">
+                <img class="noticia__img" src="../media/pag-noticias/noticia-4.jpg" alt="Ada Lovelace">
+                <article class="noticia__contenido">
                     <h4>Quién fue Ada Lovelace, la mujer con “cabeza de hombre” que inventó el algoritmo</h4>
-                    <p class="fecha-medio">Perfil, 08/10/2022</p>
+                    <p class="noticia__contenido--fecha">categoria__perfil, 08/10/2022</p>
                     <p>Idola de las mujeres STEM, las que eligen las ciencias duras como profesión, la hija que Lord Byron abandonó porque lo “decepcionó” al no haber nacido varón, 
                         rompió los prejuicios de su clase, en la Gran Bretaña victoriana. Creó el algoritmo a partir de la máquina para tejer Jacquard y, aun mujer, sentó las bases 
                         para programar computadoras, cuando aún no existían.</p>
-                    <a target="_blank" href="https://www.perfil.com/noticias/sociedad/quien-fue-ada-lovelace-la-mujer-con-cabeza-de-hombre-que-invento-el-algoritmo.phtml">Leer más</a>
+                    <a target="_blank" href="https://www.categoria__perfil.com/noticias/sociedad/quien-fue-ada-lovelace-la-mujer-con-cabeza-de-hombre-que-invento-el-algoritmo.phtml">Leer más</a>
                 </article>    
             </div>
             <div class="noticia">
-                <img class="img--noticia" src="../media/pag-noticias/noticia-2-dest.jpg" alt="Mujeres en una reunión">
-                <article class="contenido--noticia">
+                <img class="noticia__img" src="../media/pag-noticias/noticia-2-dest.jpg" alt="Mujeres en una reunión">
+                <article class="noticia__contenido">
                     <h4>80 mujeres rurales se forman en nuevas tecnologías</h4>
-                    <p class="fecha-medio">Andalucía Información, 14/10/2022</p>
+                    <p class="noticia__contenido--fecha">Andalucía Información, 14/10/2022</p>
                     <p>La vicepresidenta tercera de la Diputación, Carmen Collado, y la diputada de Empleo, además de edil arcense, Ana Carrera, inauguraban la jornada ‘Poderío 
                         Digital’ en la Junta de los Ríos de Arcos, organizada por la Federación Ceres y financiada por el área de Igualdad en torno a la celebración del Día 
                         Mundial de la Mujer Rural.</p>
@@ -76,10 +76,10 @@
                 </article>            
             </div>
             <div class="noticia">
-                <img class="img--noticia" src="../media/pag-noticias/noticia-3.jpg" alt="Yvonne Barr">
-                <article class="contenido--noticia">
+                <img class="noticia__img" src="../media/pag-noticias/noticia-3.jpg" alt="Yvonne Barr">
+                <article class="noticia__contenido">
                     <h4>La mujer anónima que descubrió el virus cancerígeno presente en el 95% de las personas</h4>
-                    <p class="fecha-medio">El País, 21/10/2022</p>
+                    <p class="noticia__contenido--fecha">El País, 21/10/2022</p>
                     <p>Una profesora de instituto, Yvonne Balding, murió hace seis años en Australia sin que trascendiera la noticia. Casi nadie sabía que aquella anónima maestra 
                         de matemáticas era en realidad Yvonne Barr —su nombre de soltera—, la codescubridora del virus de Epstein-Barr, un organismo que es culpable de la enfermedad 
                         del beso, de la esclerosis múltiple e incluso de algunos tumores.</p>
@@ -87,10 +87,10 @@
                 </article> 
             </div>
             <div class="noticia">
-                <img class="img--noticia" src="../media/pag-noticias/noticia-5-ult.jpg" alt="Mujer inventora">
-                <article class="contenido--noticia">
+                <img class="noticia__img" src="../media/pag-noticias/noticia-5-ult.jpg" alt="Mujer inventora">
+                <article class="noticia__contenido">
                     <h4>Por qué ellas inventan y no lo sabemos</h4>
-                    <p class="fecha-medio">La Sexta, 08/11/2022</p>
+                    <p class="noticia__contenido--fecha">La Sexta, 08/11/2022</p>
                     <p>En España, una de cada cuatro inventores es mujer, un dato todavía lejano de la paridad pero que refleja la lucha de muchas inventoras por abrirse camino. En 
                         la actualidad, nuestro país se sitúa entre los territorios con mayor porcentaje de inventoras de toda Europa. Muchas de ellas se han visto obligadas a 
                         marcharse de España e investigar en otros lugares ante la falta de apoyo institucional.</p>
@@ -102,22 +102,22 @@
         <!--Barra a un lado: para navegación rápida a las categorías-->    
         <aside class="aside">
             <h2>Categorías</h2>
-            <div class="campo--index">
+            <div class="aside__campo">
                 <a href="../html/categorias/software.html">
                     <img src="../media/pag-categorias/software.jpg" alt="">
                 </a>
             </div>
-            <div class="campo--index">
+            <div class="aside__campo">
                 <a href="../html/categorias/hardware.html">
                     <img src="../media/pag-categorias/hardware.jpg" alt="">
                 </a>
             </div>
-            <div class="campo--index">
+            <div class="aside__campo">
                 <a href="../html/categorias/ciencias.html">
                     <img src="../media/pag-categorias/ciencia.jpg" alt="">
                 </a>
             </div>
-            <div class="campo--index">
+            <div class="aside__campo">
                 <a href="../html/categorias/medicina.html">
                     <img src="../media/pag-categorias/medicina.jpg" alt="">
                 </a>

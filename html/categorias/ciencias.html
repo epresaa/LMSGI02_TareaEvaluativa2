@@ -27,31 +27,31 @@
     
     <!--Barra de navegación: presente en todas las páginas siempre en el mismo sitio-->
     <nav class="navbar">
-        <a class="navbar-item" href="../../index.html">Página Principal</a>
-        <a class="navbar-item" href="../noticias.html">Noticias</a>
-        <a class="navbar-item" href="../categorias.html">Categorías</a>
-        <a class="navbar-item" href="../contacto.html">Contacto</a>
+        <a class="navbar__item" href="../../index.html">Página Principal</a>
+        <a class="navbar__item" href="../noticias.html">Noticias</a>
+        <a class="navbar__item" href="../categorias.html">Categorías</a>
+        <a class="navbar__item" href="../contacto.html">Contacto</a>
     </nav>
 
     <!--Contenido principal de la página-->
-    <main class="categoria-container">
+    <main class="categoria">
 
         <!--Presentación: explicación de la categoría-->
-        <section class="categoria-presentacion">
-            <h2 class="titulo-cat">Ciencias - Física y Química, Matemáticas, Ingeniería</h2>
-            <div class="contenido-categoria">
-                <img class ="img-categoria" src="../../media/pag-categorias/ciencia-pagina.jpg" alt="ciencias">
-                <div class="categoria-texto">
+        <section class="categoria__presentacion">
+            <h2 class="categoria__presentacion--titulo">Ciencias - Física y Química, Matemáticas, Ingeniería</h2>
+            <div class="categoria__presentacion__contenido">
+                <img class ="categoria__img" src="../../media/pag-categorias/ciencia-pagina.jpg" alt="ciencias">
+                <div class="categoria__texto">
                     <p>La palabra <i>ciencia</i> proviene del latín scientĭa, “conocimiento” </p>
                     <p>Una definición general y aceptada de ciencia de las muchas que existen es la siguiente:</p>
-                    <p class=”definicion”><q>Es un conjunto de conocimientos sistemáticos comprobables que estudian, explican y predicen los fenómenos sociales, 
+                    <p class="categoria__texto--definicion"><q>Es un conjunto de conocimientos sistemáticos comprobables que estudian, explican y predicen los fenómenos sociales, 
                         artificiales y naturales. El conocimiento científico se obtiene de manera metodológica mediante observación y experimentación en campos 
                         de estudio específicos. A partir del razonamiento lógico y el análisis objetivo de la evidencia científica se formulan preguntas de 
                         investigación e hipótesis, se deducen principios y leyes, y se construyen modelos, teorías y sistemas de conocimientos por medio del método 
                         científico.</q></p>
                     <p>Algunos campos de la ciencia en los que nos centraremos son por ejemplo la Física, la Química, las Matemáticas o la Ingeniería, pero el 
                         abanico de disciplinas que abarca el término genérico “ciencias” es mucho más amplio. </p>
-                    <p class="fuente"><a href=" https://es.wikipedia.org/wiki/Software " target="_blank"> Fuente: Artículo de Wikipedia sobre la Ciencia </a>
+                    <p class="categoria__texto--fuente"><a href=" https://es.wikipedia.org/wiki/Software " target="_blank">Fuente: Artículo de Wikipedia sobre la Ciencia.</a>
                     <p>Podemos encontrar que a lo largo de la historia la mujer ha tenido un papel destacable en las ciencias, no obstante, este papel no ha sido 
                         reconocido como debía hasta el siglo XX. </p>
                 </div>
@@ -63,36 +63,36 @@
         </div>    
         
         <!--Enlaces a los perfiles de las cuatro mujeres estudiadas en esta categoría-->
-        <div class="categoria-main">
+        <div class="categoria__enlaces">
             <a href="ciencias/mariecurie.html">
-                <figure class="perfil">
-                    <img class="fotoperfil" src="../../media/pag-categorias/cientificas/MarieCurie.jpg" alt="Marie Curie">
-                    <figcaption class="pie-fotoperfil">Marie Curie</figcaption>
+                <figure class="categoria__perfil">
+                    <img class="categoria__perfil--fotoperfil" src="../../media/pag-categorias/cientificas/MarieCurie.jpg" alt="Marie Curie">
+                    <figcaption class="categoria__perfil--pie">Marie Curie</figcaption>
                 </figure>
             </a>
             <a href="ciencias/lisemeitner.html">
-                <figure class="perfil">
-                    <img class="fotoperfil" src="../../media/pag-categorias/cientificas/LiseMeitner.jpg" alt="Lise Meitner">
-                    <figcaption class="pie-fotoperfil">Lise Meitner</figcaption>
+                <figure class="categoria__perfil">
+                    <img class="categoria__perfil--fotoperfil" src="../../media/pag-categorias/cientificas/LiseMeitner.jpg" alt="Lise Meitner">
+                    <figcaption class="categoria__perfil--pie">Lise Meitner</figcaption>
                 </figure>
             </a>
             <a href="ciencias/katherinejohnson.html">
-                <figure class="perfil">
-                    <img class="fotoperfil" src="../../media/pag-categorias/cientificas/KatherineJohnson.jpg" alt="Katherine Johnson">
-                    <figcaption class="pie-fotoperfil">Katherine Johnson</figcaption>
+                <figure class="categoria__perfil">
+                    <img class="categoria__perfil--fotoperfil" src="../../media/pag-categorias/cientificas/KatherineJohnson.jpg" alt="Katherine Johnson">
+                    <figcaption class="categoria__perfil--pie">Katherine Johnson</figcaption>
                 </figure>
             </a>
             <a href="ciencias/valentinatereshkova.html">
-                <figure class="perfil">
-                    <img class="fotoperfil" src="../../media/pag-categorias/cientificas/ValentinaTereshkova.jpg" alt="Valentina Tereshkova">
-                    <figcaption class="pie-fotoperfil">Valentina Tereshkova</figcaption>
+                <figure class="categoria__perfil">
+                    <img class="categoria__perfil--fotoperfil" src="../../media/pag-categorias/cientificas/ValentinaTereshkova.jpg" alt="Valentina Tereshkova">
+                    <figcaption class="categoria__perfil--pie">Valentina Tereshkova</figcaption>
                 </figure>
             </a>
         </div>
     </main>
     
     <!--Enlace para volver atrás: a la página de categorías-->
-    <div class="atras">    
+    <div class="categoria__atras">    
         <a href="../categorias.html"><p>Volver a categorías</p></a>
     </div>
 

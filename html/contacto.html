@@ -28,18 +28,18 @@
 
     <!--Barra de navegación: presente en todas las páginas siempre en el mismo sitio-->
     <nav class="navbar">
-        <a class="navbar-item" href="../index.html">Página Principal</a>
-        <a class="navbar-item" href="noticias.html">Noticias</a>
-        <a class="navbar-item" href="categorias.html">Categorías</a>
-        <a class="navbar-item" href="contacto.html">Contacto</a>
+        <a class="navbar__item" href="../index.html">Página Principal</a>
+        <a class="navbar__item" href="noticias.html">Noticias</a>
+        <a class="navbar__item" href="categorias.html">Categorías</a>
+        <a class="navbar__item" href="contacto.html">Contacto</a>
     </nav>
 
     <!--Contenedor flex en el que se encuentra todo el contenido de la página-->
     <div class="contenido">
 
         <!--Contenido principal de la página de contacto: presentación y formulario-->
-        <main class="cuerpo-contacto">
-            <div class="contacto">
+        <main class="contenido__cuerpo">
+            <div class="contenido__cuerpo__contacto">
                 <section>
                     <h2>Contacta con nosotras</h2><hr class="subrayado-h2">
                     <p>¡Necesitamos tu ayuda!</p>
@@ -53,19 +53,19 @@
                 </section>
                 
                 <!--Formulario de contacto para proponer los trabajos de otras mujeres-->
-                <form class="formulario-contacto" action="mailto:epresa@birt.eus" method="get">
+                <form class="formulario" action="mailto:epresa@birt.eus" method="get">
                     <fieldset>
                         <legend>Datos de contacto</legend>
-                        <div class="form-flex-container">
-                            <div class="fila">
+                        <div class="formulario__contenedor">
+                            <div class="formulario__fila">
                                 <label for="nombre">Nombre </label>
                                 <input id="nombre" type="text" name="nombre">
                             </div>
-                            <div class="fila">
+                            <div class="formulario__fila">
                                 <label for="apellidos">Apellidos </label>
                                 <input id="apellidos" type="text" name="apellidos">
                             </div>
-                            <div class="fila">
+                            <div class="formulario__fila">
                                 <label for="email">Email </label>
                                 <input id="email" type="email" name="email">
                             </div>
@@ -73,8 +73,8 @@
                     </fieldset>
                     <fieldset>
                         <legend>Mi propuesta</legend>
-                        <div class="form-flex-container">
-                            <div class="fila">
+                        <div class="formulario__contenedor">
+                            <div class="formulario__fila">
                                 <label for="campo">Campo de estudio</label>
                                 <input list="campos" name="campo" id="campo" placeholder="Selecciona o sugiere un nuevo campo">
                                 <datalist id="campos">
@@ -84,13 +84,13 @@
                                     <option value="Medicina y Enfermería">
                                 </datalist>
                             </div>
-                            <div class="fila">
+                            <div class="formulario__fila">
                                 <label for="trabajos">Trabajos</label>
                                 <textarea name="trabajos" id="trabajos" rows="15" cols="70" placeholder="Escribe aquí el nombre de una mujer a la que te gustaría ver en nuestra web, así como alguno de sus trabajos que quieras destacar o enlaces en los que podamos encontrarla."></textarea>
                             </div>
                         </div>
                     </fieldset>
-                    <div class="button">
+                    <div class="formulario__button">
                         <button>Enviar</button>
                     </div>
                 </form>
@@ -98,40 +98,40 @@
         </main>
 
         <!--Barra a un lado: navegación a la nueva web en construcción y a las RRSS-->
-        <aside class="aside-contacto">
-            <section class="proximamente">
+        <aside class="aside__contacto">
+            <section class="contacto__proximamente">
                 <h2>Próximamente</h2>
                 <p>Visita nuestra nueva web:</p>
-                <a class="nueva-web" href="../html/categorias/mujeresactualidad.html" target="_blank">
+                <a class="contacto__web" href="../html/categorias/mujeresactualidad.html" target="_blank">
                     <p >Mujeres en las ciencias y la tecnología</p>
                 </a>
                 <p>Muy pronto estará disponible</p>
                 <p>¡Síguenos en nuestras redes sociales para no perderte las novedades!</p>
             </section>
 
-            <div class="contenedor-filler">
+            <div class="contacto__filler">
                 <span class="filler">·</span>
                 <span class="filler">·</span>
                 <span class="filler">·</span>
                 <span class="filler">·</span>
             </div>
 
-            <section class="suigenos-rrss">
+            <section class="contacto__rrss">
                 <h2>Síguenos en RRSS</h2>
                 <div class="iconos">
-                    <div class="iconos-linea1">
-                        <div class="rrss twitter">
+                    <div class="iconos--linea1">
+                        <div class="iconos__rrss twitter">
                             <a href="https://twitter.com/" class="fa fa-twitter"></a>
                         </div>
-                        <div class="rrss instagram">
+                        <div class="iconos__rrss instagram">
                             <a href="https://instagram.com/" class="fa fa-instagram"></a>
                         </div>
                     </div>
-                    <div class="iconos-linea2">
-                        <div class="rrss facebook">
+                    <div class="iconos--linea2">
+                        <div class="iconos__rrss facebook">
                             <a href="https://facebook.com/" class="fa fa-facebook"></a>
                         </div>
-                        <div class="rrss tumblr">
+                        <div class="iconos__rrss tumblr">
                             <a href="https://tumblr.com/" class="fa fa-tumblr"></a>
                         </div>
                     </div>

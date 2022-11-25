@@ -47,7 +47,7 @@ body {
     align-self: flex-start;
 }
 
-.navbar-item {
+.navbar__item {
     font-size: 1.5rem;
     height: 100%;
     width: 25%;
@@ -79,9 +79,7 @@ nav a:active {
 }
 
     /*Contenido principal*/
-.cuerpo-index, 
-.cuerpo-noticias, 
-.cuerpo-contacto {
+.contenido__cuerpo {
     display: flex;
     flex-direction: column;
     width: 75%;
@@ -98,18 +96,18 @@ nav a:active {
     display: flex;
     min-height: 16rem;
 }
-.img--noticia { 
+.noticia__img { 
     height: 12rem;
     margin: 1rem;
     border: 0.005rem solid #12261B;
     align-self: center
 }
-.contenido--noticia {
+.noticia__contenido {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.contenido--noticia a {
+.noticia__contenido a {
     align-self: flex-end;
     justify-self: end;
     margin-right: 1rem;
@@ -131,7 +129,7 @@ article h4 {
     font-size: 1.1rem;
     padding-bottom: 1rem;
 }
-.fecha-medio {
+.noticia__contenido--fecha {
     padding-bottom: 0.5rem;
     font-style: italic;
 }
@@ -148,7 +146,7 @@ article h4 {
     text-align: center;
     color: #EBEDE3;
 }
-.campo--index img {
+.aside__campo img {
     width: 17rem; 
     height: auto;
 }
@@ -166,7 +164,7 @@ h2 {
     width: auto;
 }
 .presentacion p, 
-.informacion-pagina p {
+.pagina-cuerpo__informacion p {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     padding-bottom: 0.5rem;
@@ -182,25 +180,25 @@ h4 {
     margin-top: 1rem;
 }
     /*Enlaces, enlaces de volver atrás*/
-.fuente a,
-.categoria-main a, 
-.atras a,
-.atras-categoria,
+.categoria__texto--fuente a,
+.categoria__enlaces a, 
+.categoria__atras a,
+.pagina-cuerpo__atras--categoria,
 .nueva-web {
     text-decoration: none;
     color: black;
 }
     /*Imágenes con reborde blanco*/
-.fotoperfil, 
-.img-pagina,
-.img-categoria {
+.categoria__perfil--fotoperfil, 
+.pagina__img,
+.categoria__img {
     border: solid white 7px;
     box-shadow: 0.1rem 0.1rem 5px  rgb(134, 134, 134);
 }
 
 /*PAGINA CONTACTO*/
     /*Aside página contacto*/
-.aside-contacto {
+.aside__contacto {
     background-color: #36564D;             
     color: #DADFD7;
     width: 25%;
@@ -210,29 +208,29 @@ h4 {
     justify-content: space-around;
     text-align: center;
 }
-.proximamente {
+.contacto__proximamente {
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: space-evenly;
 }
-.proximamente h2, 
-.suigenos-rrss h2 {
+.contacto__proximamente h2, 
+.contacto__rrss h2 {
     text-align: center;
     margin-bottom: 1rem;
 }
-.proximamente p {
+.contacto__proximamente p {
     padding: 0 3rem;
     font-size: 1.2rem;
     text-align: center;
     margin: 1rem 0;
 }
-.nueva-web {
+.contacto__web {
     text-transform: uppercase;
     margin: 1rem;
 }
-.nueva-web p {
+.contacto__web p {
     background-color: rgba(153, 189, 160, 0.144);
     padding: 2rem 1rem;
     margin: 0 3rem;
@@ -240,7 +238,7 @@ h4 {
     font-size: 1.3rem;
     color: #DADFD7;
 }
-.contenedor-filler {
+.contacto__filler {
     display: flex;
     flex-direction: column;
     height: 15rem;
@@ -258,7 +256,7 @@ h4 {
     display: flex;
     justify-content: center;
 }
-.rrss a {
+.iconos__rrss a {
     text-decoration: none;
     font-size: 3rem;
     padding: 1rem;
@@ -268,12 +266,12 @@ h4 {
     height: 3rem;
     border-radius: 0.6rem;
 }
-.rrss {
+.iconos__rrss {
     margin: 2rem 2rem 2rem 2rem;
 }
 
     /*Formulario de contacto*/
-.cuerpo-contacto p {
+.contenido__cuerpo p {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     text-align: justify;
@@ -281,14 +279,14 @@ h4 {
     line-height: 1.3rem;
     margin: 1rem 0;
 }
-.form-flex-container {
+.formulario__contenedor {
     display: flex;
     flex-direction: column;
     margin: 1rem; 
     font-size: 1.2rem;
     justify-content: center;
 }
-.fila {
+.formulario__fila {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -330,7 +328,7 @@ textarea {
     padding: 0.5rem;
     border-radius: 0.6rem;
 }
-.button {
+.formulario__button {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -372,7 +370,7 @@ button {
     border-radius: 20px;
     position: absolute;         
 }
-.diapositivas {
+.carrousel__diapositivas {
     display: flex;
     overflow-x: scroll;
     position: relative;
@@ -479,37 +477,37 @@ a.diapositiva__next,
 }
 
 /*PAGINA DE CADA CATEGORIA*/
-.titulo-cat {
+.categoria__presentacion--titulo {
     margin-bottom: 2rem;
     margin-left: 3rem;
     margin-top: 2rem;
     font-size: 1.5rem;
 }
-.categoria-presentacion {
+.categoria__presentacion {
     display: flex;
     flex-direction: column;
 }
-.categoria-texto {
+.categoria__texto {
     border: solid #12261B 2px;
     background-color: #99bda082;
     padding: 1rem;
     margin-right: 1rem;
 }
-.img-categoria {
+.categoria__img {
     left: 1.5rem;
     height: 15rem;
     margin-left: 2rem;
     margin-right: 2rem;
     align-self: center;
 }
-.contenido-categoria {
+.categoria__presentacion__contenido {
     display: flex;
 }
-.contenido-categoria .fuente {
-    text-align: right;
+.categoria__texto--fuente {
     margin: 1rem 0;
+    text-align: right;
 }
-.contenido-categoria p {
+.categoria__presentacion__contenido {
     padding-right: 1.5rem;
     padding-bottom: 0.5rem;
     font-size: 1.1rem;
@@ -521,40 +519,40 @@ a.diapositiva__next,
     padding: 0 1rem;
     font-style: italic;
 }
-.atras {
+.categoria__atras {
     display: flex;
     justify-content: center;
     margin: 1.5rem 0 3rem 0; 
 }
-.atras p {
+.categoria__atras p {
     padding: 1rem;
     background-color: #99bda0;
     color: black;
     font-size: 1.2rem;
     border-radius: 6rem;
 }
-.categoria-main {
+.categoria__enlaces {
     display: flex;
     padding-bottom: 3.5rem;
     padding-top: 1rem;
     justify-content: space-evenly;
 }
-.fotoperfil {
+.categoria__perfil--fotoperfil {
     max-width: 14rem;
     max-height: auto;
     margin: 1rem;
 }
-.perfil {
+.categoria__perfil {
     display: flex;
     flex-direction: column;
 }
-.pie-fotoperfil {
+.categoria__perfil--pie {
     text-align: center;
     font-size: 1.5rem;
 }
 
 /*PAGINA DE CADA MUJER*/
-.img-pagina {
+.pagina__img {
     position: fixed;
     top: 38vh;
     left: 5vw;
@@ -568,13 +566,13 @@ a.diapositiva__next,
     font-style: italic;
     color: darkslategray;
 }
-.informacion-pagina {
+.pagina-cuerpo__informacion {
     position: relative;
     top: 6vh;
     width: 70vw;
     margin-bottom: 4rem;
 }
-.cuerpo-pagina {
+.pagina-cuerpo {
     margin-left: 25vw;
 }
 h3 {
@@ -588,35 +586,26 @@ h5 {
     padding-top: 0.7rem;
     padding-bottom: 0.5rem;
 }
-.informacion-pagina p {
+.pagina-cuerpo__informacion {
     line-height: 1.4rem;
     padding-top: 0.5rem;
     margin: 0;
     font-size: 1.1rem;
-    text-align: justify;
 }
-.atras-categoria {
+.pagina-cuerpo__fuente a {
+    color: black;
+    text-decoration: none;
+}
+.pagina-cuerpo__atras--categoria {
     font-size: 1.1rem;
     padding: 1rem;
     background-color: #99bda0;
     border-radius: 6rem;
-    margin-bottom: 1.2rem;
+    margin-bottom: 4rem;
 }
-.atras-flex {
+.pagina-cuerpo__atras--flex {
     display: flex;
     justify-content: center;
-}
-
-/*PAGINA EN CONSTRUCCION*/
-.construccion {
-    font-size: 2rem;
-    text-align: center;
-    margin: 3rem 0;
-}
-.img-construccion {
-    position: relative;
-    left: 45vw;
-    width: 10vw;
 }
 
 /*FOOTER: presente en todas las páginas del sitio web*/

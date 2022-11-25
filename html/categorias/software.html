@@ -27,30 +27,30 @@
     
     <!--Barra de navegación: presente en todas las páginas siempre en el mismo sitio-->
     <nav class="navbar">
-        <a class="navbar-item" href="../../index.html">Página Principal</a>
-        <a class="navbar-item" href="../noticias.html">Noticias</a>
-        <a class="navbar-item" href="../categorias.html">Categorías</a>
-        <a class="navbar-item" href="../contacto.html">Contacto</a>
+        <a class="navbar__item" href="../../index.html">Página Principal</a>
+        <a class="navbar__item" href="../noticias.html">Noticias</a>
+        <a class="navbar__item" href="../categorias.html">Categorías</a>
+        <a class="navbar__item" href="../contacto.html">Contacto</a>
     </nav>
 
     <!--Contenido principal de la página-->
-    <main class="categoria-container">
+    <main class="categoria">
 
         <!--Presentación: explicación de la categoría-->
-        <section class="categoria-presentacion">
-            <h2 class="titulo-cat">Computación: Software</h2>
-            <div class="contenido-categoria">
-                <img class ="img-categoria" src="../../media/pag-categorias/software-pagina.jpg" alt="software">
-                <div class="categoria-texto">
+        <section class="categoria__presentacion">
+            <h2 class="categoria__presentacion--titulo">Computación: Software</h2>
+            <div class="categoria__presentacion__contenido">
+                <img class ="categoria__img" src="../../media/pag-categorias/software-pagina.jpg" alt="software">
+                <div class="categoria__texto">
                     <p>La palabra <i>software</i> proviene del inglés, y en español no posee una traducción adecuada al contexto, por lo cual se la utiliza asiduamente 
                         sin traducir y así fue admitida por la <abbr title="Real Academia Española">RAE</abbr>.</p>
                     <p>Existen varias definiciones similares aceptadas para software, pero probablemente la más formal sea la siguiente:</p>
-                    <p class="definicion"><q>Es el conjunto de los programas de cómputo, procedimientos, reglas, documentación y datos asociados, que forman parte de las operaciones de un 
+                    <p class="categoria__texto--definicion"><q>Es el conjunto de los programas de cómputo, procedimientos, reglas, documentación y datos asociados, que forman parte de las operaciones de un 
                         sistema de computación.</q></p>
                     <p>Considerando esta definición, el concepto de software va más allá de los programas de computación en sus distintos estados: código fuente, binario 
                         o ejecutable; también su documentación, los datos a procesar e incluso la información de usuario forman parte del software: es decir, abarca todo 
                         lo intangible, todo lo «no físico» relacionado.</p>
-                    <p class="fuente"><a href="https://es.wikipedia.org/wiki/Software" target="_blank">Fuente: Artículo de Wikipedia sobre el Software</a></p>
+                    <p class="categoria__texto--fuente"><a href="https://es.wikipedia.org/wiki/Software" target="_blank">Fuente: Artículo de Wikipedia sobre el Software.</a></p>
                     <p>El papel de las mujeres en el mundo del software no consigue renombre hasta los 60 en EE.UU., con los trabajos de Margaret Hamilton. Sin embargo, 
                         si hechamos la vista atrás conociendo la historia que conocemos ahora, podemos ver que antes de su llegada, otras mujeres plantaron importantes 
                         cimientos que aún son relevantes en el mundo del software a día de hoy.</p>
@@ -63,36 +63,36 @@
         </div>    
         
         <!--Enlaces a los perfiles de las cuatro mujeres estudiadas en esta categoría-->
-        <div class="categoria-main">
+        <div class="categoria__enlaces">
             <a href="software/rozsapeter.html">
-                <figure class="perfil">
-                    <img class="fotoperfil" src="../../media/pag-categorias/software/RozsaPeter.jpg" alt="Rozsa Peter">
-                    <figcaption class="pie-fotoperfil">Rózsa Péter</figcaption>
+                <figure class="categoria__perfil">
+                    <img class="categoria__perfil--fotoperfil" src="../../media/pag-categorias/software/RozsaPeter.jpg" alt="Rozsa Peter">
+                    <figcaption class="categoria__perfil--pie">Rózsa Péter</figcaption>
                 </figure>
             </a>
             <a href="software/francesallen.html">
-                <figure class="perfil">
-                    <img class="fotoperfil" src="../../media/pag-categorias/software/FrancesAllen.jpg" alt="Frances Allen">
-                    <figcaption class="pie-fotoperfil">Frances Allen</figcaption>
+                <figure class="categoria__perfil">
+                    <img class="categoria__perfil--fotoperfil" src="../../media/pag-categorias/software/FrancesAllen.jpg" alt="Frances Allen">
+                    <figcaption class="categoria__perfil--pie">Frances Allen</figcaption>
                 </figure>
             </a>
             <a href="software/margarethamilton.html">
-                <figure class="perfil">
-                    <img class="fotoperfil" src="../../media/pag-categorias/software/MargaretHamilton.jpg" alt="Margaret Hamilton">
-                    <figcaption class="pie-fotoperfil">Margaret Hamilton</figcaption>
+                <figure class="categoria__perfil">
+                    <img class="categoria__perfil--fotoperfil" src="../../media/pag-categorias/software/MargaretHamilton.jpg" alt="Margaret Hamilton">
+                    <figcaption class="categoria__perfil--pie">Margaret Hamilton</figcaption>
                 </figure>
             </a>
             <a href="software/radiaperlman.html">
-                <figure class="perfil">
-                    <img class="fotoperfil" src="../../media/pag-categorias/software/RadiaPerlman.jpg" alt="Radia Perlman">
-                    <figcaption class="pie-fotoperfil">Radia Perlman</figcaption>
+                <figure class="categoria__perfil">
+                    <img class="categoria__perfil--fotoperfil" src="../../media/pag-categorias/software/RadiaPerlman.jpg" alt="Radia Perlman">
+                    <figcaption class="categoria__perfil--pie">Radia Perlman</figcaption>
                 </figure>
             </a>
         </div>
     </main>
 
     <!--Enlace para volver atrás: a la página de categorías-->
-    <div class="atras">    
+    <div class="categoria__atras">    
         <a href="../categorias.html"><p>Volver a categorías</p></a>
     </div>
 
