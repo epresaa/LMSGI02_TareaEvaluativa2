@@ -229,6 +229,8 @@ h4 {
 .contacto__web {
     text-transform: uppercase;
     margin: 1rem;
+    text-decoration: none;
+    color: #DADFD7;
 }
 .contacto__web p {
     background-color: rgba(153, 189, 160, 0.144);
@@ -237,6 +239,7 @@ h4 {
     border-radius: 6rem;
     font-size: 1.3rem;
     color: #DADFD7;
+    text-decoration: none;
 }
 .contacto__filler {
     display: flex;
