@@ -46,7 +46,6 @@ body {
     z-index: 2;
     align-self: flex-start;
 }
-
 .navbar__item {
     font-size: 1.5rem;
     height: 100%;
@@ -158,6 +157,9 @@ article h4 {
     width: 17rem; 
     height: auto;
 }
+.aside__campo--ultima {
+    margin-bottom: 3rem;
+}
 
     /*Formatos de texto, color, etc.*/
 h2 {
@@ -189,6 +191,7 @@ h2 {
 h4 {
     margin-top: 1rem;
 }
+
     /*Enlaces, enlaces de volver atrás*/
 .categoria__texto--fuente a,
 .categoria__enlaces a, 
@@ -198,6 +201,7 @@ h4 {
     text-decoration: none;
     color: black;
 }
+
     /*Imágenes con reborde blanco*/
 .categoria__perfil--fotoperfil, 
 .pagina__img,
@@ -369,7 +373,7 @@ button {
 }
 .carrousel {
     background-color: white;
-    border: 0.2rem solid white;
+    border: 0.2rem solid #36564da6;
     width: 40vw;
     min-width: 40vw;
     max-width: 40vw;
@@ -431,7 +435,6 @@ a.diapositiva__prev,
     -webkit-transform: rotate(135deg);
     left: 5%;
 }
-
 a.diapositiva__next, 
 .carrousel::after {
     transform: rotate(-45deg);
@@ -497,33 +500,33 @@ a.diapositiva__next,
 .categoria__presentacion {
     display: flex;
     flex-direction: column;
+    margin-bottom: 4rem;
 }
 .categoria__texto {
     border: solid #12261B 2px;
     background-color: #99bda082;
     padding: 1rem;
-    margin-right: 1rem;
+    margin-right: 5%;
+    width: 53%;
 }
 .categoria__img {
     left: 1.5rem;
-    height: 15rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    width: 33%;
+    margin-left: 5%;
+    margin-right: 4%;
     align-self: center;
 }
 .categoria__presentacion__contenido {
     display: flex;
-}
-.categoria__texto--fuente {
-    margin: 1rem 0;
-    text-align: right;
-}
-.categoria__presentacion__contenido {
     padding-right: 1.5rem;
     padding-bottom: 0.5rem;
     font-size: 1.1rem;
     line-height: 1.3rem;
     text-align: justify;
+}
+.categoria__texto--fuente {
+    margin: 1rem 0;
+    text-align: right;
 }
 .definicion {
     font-size: 1rem;
@@ -545,7 +548,7 @@ a.diapositiva__next,
 .categoria__enlaces {
     display: flex;
     padding-bottom: 3.5rem;
-    padding-top: 1rem;
+    margin-top: 4rem;
     justify-content: space-evenly;
 }
 .categoria__perfil--fotoperfil {
