@@ -553,7 +553,7 @@ a.diapositiva__next,
 }
 .categoria__perfil--fotoperfil {
     max-width: 14rem;
-    max-height: auto;
+    max-height: 100%;
     margin: 1rem;
 }
 .categoria__perfil {
