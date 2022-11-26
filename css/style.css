@@ -89,7 +89,7 @@ nav a:active {
 
     /*Noticias*/
 .noticia {
-    border: solid #12261B 2px;
+    border: solid #12261B 0.12rem;
     background-color: #99bda082;
     margin: 2rem;
     display: flex;
@@ -146,8 +146,8 @@ article h4 {
     color: #EBEDE3;
 }
 .aside__espacio--filler {
-    height: 30px;
-    width: 30px;
+    height: 2rem;
+    width: 2rem;
     border-radius: 50%;
     color: #BED5C2;
     background-color: #BED5C2;
@@ -156,6 +156,7 @@ article h4 {
 .aside__campo img {
     width: 17rem; 
     height: auto;
+    border-radius: 2rem;
 }
 .aside__campo--ultima {
     margin-bottom: 3rem;
@@ -171,7 +172,7 @@ h2 {
     padding-bottom: 4rem;
 }
 .subrayado-h2 {
-    border: #62998D solid 2px;
+    border: #62998D solid 0.15rem;
     background-color: #62998D;
     margin: 0.5rem 0.5rem 2rem 0.5rem;
     width: auto;
@@ -206,8 +207,8 @@ h4 {
 .categoria__perfil--fotoperfil, 
 .pagina__img,
 .categoria__img {
-    border: solid white 7px;
-    box-shadow: 0.1rem 0.1rem 5px  rgb(134, 134, 134);
+    border: solid white 0.4rem;
+    box-shadow: 0.1rem 0.1rem 0.3rem  rgb(134, 134, 134);
 }
 
 /*PAGINA CONTACTO*/
@@ -257,8 +258,8 @@ h4 {
     align-items: center;
 }
 .contacto__filler--filler {
-    height: 30px;
-    width: 30px;
+    height: 2rem;
+    width: 2rem;
     border-radius: 50%;
     color: #BED5C2;
     background-color: #BED5C2;
@@ -309,7 +310,7 @@ h4 {
 }
 fieldset {
     margin: 2rem 14rem;
-    border: solid #12261B 2px;
+    border: solid #12261B 0.12rem;
     background-color: #99bda082;
 }
 legend {
@@ -380,9 +381,8 @@ button {
     height: 56vh;
     max-height: 56vh;
     min-height: 56vh;
-    margin: 20px;
     overflow: hidden;
-    border-radius: 20px;
+    border-radius: 1.5rem;
     position: absolute;         
 }
 .carrousel__diapositivas {
@@ -404,7 +404,7 @@ button {
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
-    margin-right: 0px;
+    margin-right: 0;
     width: 40vw;
     min-width: 40vw;
     max-width: 40vw;
@@ -421,12 +421,12 @@ button {
 .boton {
     position: absolute;
     top: 48%;
-    width: 35px;
-    height: 35px;
+    width: 2.3rem;
+    height: 2.3rem;
     border: none;
     background: none;
-    border-width: 0 4px 4px 0;
-    padding: 20px;
+    border-width: 0 0.6rem 0.6rem 0;
+    padding: 1.3rem;
     box-sizing: border-box;
 }
 a.diapositiva__prev, 
@@ -447,11 +447,11 @@ a.diapositiva__next,
 .diapositiva_next {
     position: absolute;
     top: 48%;
-    width: 35px;
-    height: 35px;
+    width: 2.3rem;
+    height: 2.3rem;
     border: solid #264D42;
     border-width: 0 0.3rem 0.3rem 0;
-    padding: 3px;
+    padding: 1.3rem;
     box-sizing: border-box;
 }
 .carrousel::before, 
@@ -476,10 +476,10 @@ a.diapositiva__next,
 }
 .diapositiva_link {
     display: inline-block;
-    height: 15px;
-    width: 15px;
+    height: 1rem;
+    width: 1rem;
     border-radius: 50%;
-    margin: 0 10px 0 10px;
+    margin: 0 0.6rem 0 0.6rem;
 }
 .carrousel-nav a:link, 
 .carrousel-nav a:visited {
@@ -503,9 +503,9 @@ a.diapositiva__next,
     margin-bottom: 4rem;
 }
 .categoria__texto {
-    border: solid #12261B 2px;
+    border: solid #12261B 0.12rem;
     background-color: #99bda082;
-    padding: 1rem;
+    padding: 1.2rem;
     margin-right: 5%;
     width: 53%;
 }
