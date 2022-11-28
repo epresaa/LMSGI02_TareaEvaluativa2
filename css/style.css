@@ -2,13 +2,35 @@
     Unidad 2 - Tarea Evaluativa 2
     
     Este documento css da estilo a todos los documentos html del sitio web.
-*/
 
+    ÍNDICE del documento style.css: 
+    I. Estilos aplicados a todo el documeno
+    II. Título o Header 
+    III. Barra de navegación
+    IV. Estilos compartidos
+        Contenedor de main y aside
+        Contenido principal
+        Noticias
+        Aside
+        Formatos de texto, color, etc.
+        Enlaces, enlaces de volver atrás
+        Imágenes con reborde blanco    
+    V. Página de contacto
+        Aside página contacto
+        Formulario de contacto
+    VI. Página de categorías
+        Carrousel
+        Botones del carrousel
+        Breadcrumbs del carrousel
+    VII. Página de cada  categoría
+    VIII. Página de cada muejr
+    IX. Footer
+*/
 
 /*Se importa el archivo css de normalización de estilos*/
 @import "normalize.css";
 
-/*Estilo aplicado a todo el documento*/
+/*I. Estilo aplicado a todo el documento*/
 * {
     font-family: 'Raleway', sans-serif;
 }
@@ -18,11 +40,11 @@ body {
     background-color: white;
 }
 
-/*TITULO: presente en todas las páginas del sitio web*/
+/*II. TITULO: presente en todas las páginas del sitio web*/
 .titulo {
     background-color: #12261B;
     color: #D2DDCA;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     position: sticky;
     top: 0;
     left: 0; 
@@ -34,8 +56,12 @@ body {
     z-index: 3;
     align-self: flex-start;
 }
+.titulo h1 {
+    overflow: wrap; 
+    text-align: center;
+}
 
-/*BARRA DE NAVEGACION: presente en todas las páginas del sitio web*/
+/*III. BARRA DE NAVEGACION: presente en todas las páginas del sitio web*/
 .navbar {
     background-color: #264D42;
     position: sticky;
@@ -69,7 +95,7 @@ nav a:active {
     color: #264D42;
 }
 
-/*ESTILOS COMPARTIDOS ENTRE LAS PÁGINAS*/
+/*IV. ESTILOS COMPARTIDOS ENTRE LAS PÁGINAS*/
 /*Se indica el estilo compartido*/
     /*Contenedor de main y aside*/
 .contenido {
@@ -215,7 +241,7 @@ h4 {
     box-shadow: 0.1rem 0.1rem 0.3rem  rgb(134, 134, 134);
 }
 
-/*PAGINA CONTACTO*/
+/*V. PÁGINA DE CONTACTO*/
     /*Aside página contacto*/
 .aside__contacto {
     background-color: #36564D;             
@@ -296,26 +322,18 @@ h4 {
     font-size: 1.2rem;
     line-height: 1.3rem;
 }
-
-.formulario__contenedor {
-    display: flex;
-    flex-direction: column;
-    margin: 1rem; 
-    font-size: 1.2rem;
-    justify-content: center;
-    min-width: 40vw;
-    max-width: 41vw;
-}
-.formulario__fila {
+.formulario {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0.3rem;
 }
 fieldset {
-    margin: 2rem 14rem;
+    min-width: 40vw;
+    max-width: 41vw;
+    margin: 1.5rem 14rem;
     border: solid #12261B 0.12rem;
     background-color: #99bda082;
+    padding: 1rem 0 1.5rem 0;
 }
 legend {
     font-size: 1.4rem;
@@ -325,46 +343,51 @@ legend {
     background-color: #12261B;
     color: #DADFD7;
 }
+.formulario__contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+.formulario__fila {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.5rem;
+}
+label {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;    
+}
 input {
     margin: 0.5rem;
     color: black;
     width: 20rem;
     height: 2rem;
-    left: 3rem;
     background-color: rgba(255, 255, 255, 0.849);
     border: none;
     padding: 0.3rem;
     border-radius: 0.6rem;
 }
-label {
-    margin: 0.5rem 0;
-}
 textarea {
     margin: 0.5rem;
+    padding: 0.5rem;
     color: black;
-    left: 3rem;
     background-color: rgba(255, 255, 255, 0.849);
     border: none;
-    padding: 0.5rem;
     border-radius: 0.6rem;
-}
-.formulario__button {
-    display: flex;
-    justify-content: center;
-    text-align: center;
 }
 button {
     margin-bottom: 2rem;
     padding: 1.5rem 2rem;
     font-size: 1.4rem;
+    font-weight: 600;   
     border-radius: 0.6rem;
     border: none;
-    font-weight: 600;
     color: #DADFD7;
     background-color: #12261B;
 }
 
-/*PAGINA DE CATEGORIAS*/
+/*VI. PÁGINA DE CATEGORÍAS*/
     /*Carrousel*/
 .carrousel img {
     width: 40vw;
@@ -422,7 +445,7 @@ button {
     scroll-snap-align: center;
 }
 
-    /*Botones del carrousel*/
+    
 .boton {
     position: absolute;
     top: 48%;
@@ -495,7 +518,7 @@ a.diapositiva__next,
     background-color: #BED5C2;
 }
 
-/*PAGINA DE CADA CATEGORIA*/
+/*VII. PÁGINA DE CADA CATEGORÍA*/
 .categoria__presentacion--titulo {
     margin-bottom: 2rem;
     margin-left: 3rem;
@@ -570,7 +593,7 @@ a.diapositiva__next,
     font-size: 1.5rem;
 }
 
-/*PAGINA DE CADA MUJER*/
+/*VIII. PÁGINA DE CADA MUJER*/
 .pagina__img {
     position: fixed;
     top: 38vh;
@@ -627,7 +650,7 @@ h5 {
     justify-content: center;
 }
 
-/*FOOTER: presente en todas las páginas del sitio web*/
+/*IX. FOOTER: presente en todas las páginas del sitio web*/
 .footer {
     background-color: #264D42;
     text-decoration: none;
