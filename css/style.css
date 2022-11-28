@@ -22,6 +22,7 @@ body {
 .titulo {
     background-color: #12261B;
     color: #D2DDCA;
+    font-size: 1.6rem;
     position: sticky;
     top: 0;
     left: 0; 
@@ -168,13 +169,16 @@ h2 {
     padding: 1rem;
     margin: 3rem 0 0 0;
 }
+.contenido__cuerpo h2 {
+    padding-left: 4rem;
+}
 .aside h2 {
     padding-bottom: 4rem;
 }
 .subrayado-h2 {
     border: #62998D solid 0.15rem;
     background-color: #62998D;
-    margin: 0.5rem 0.5rem 2rem 0.5rem;
+    margin: 0.5rem 3rem 2rem 3rem;
     width: auto;
 }
 .pagina-cuerpo__informacion p {
@@ -285,22 +289,22 @@ h4 {
 
     /*Formulario de contacto*/
 .contenido__cuerpo p {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
     padding-bottom: 1rem;
     text-align: justify;
     font-size: 1.2rem;
     line-height: 1.3rem;
 }
-.contenido__cuerpo {
-    margin: 0 4rem 4rem 4rem;
-}
+
 .formulario__contenedor {
     display: flex;
     flex-direction: column;
     margin: 1rem; 
     font-size: 1.2rem;
     justify-content: center;
+    min-width: 40vw;
+    max-width: 41vw;
 }
 .formulario__fila {
     display: flex;
@@ -364,6 +368,7 @@ button {
     /*Carrousel*/
 .carrousel img {
     width: 40vw;
+    height: 56vh;
 }
 .contenedor-carrousel {
     display: flex;
