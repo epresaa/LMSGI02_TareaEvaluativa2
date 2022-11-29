@@ -37,6 +37,7 @@
 
 body {
     background-image: url("../media/background-foto-mosaico.jpg");
+    background-size: cover;
     background-color: white;
 }
 
@@ -532,9 +533,12 @@ a.diapositiva__next,
 .categoria__texto {
     border: solid #12261B 0.12rem;
     background-color: #99bda082;
-    padding: 1.2rem;
+    padding: 1.5rem;
     margin-right: 5%;
     width: 53%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .categoria__img {
     left: 1.5rem;
@@ -555,9 +559,9 @@ a.diapositiva__next,
     margin: 1rem 0;
     text-align: right;
 }
-.definicion {
+.categoria__texto--definicion {
     font-size: 1rem;
-    padding: 0 1rem;
+    padding: 0.5rem 1rem;
     font-style: italic;
 }
 .categoria__atras {
