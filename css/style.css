@@ -30,6 +30,12 @@
 /*Se importa el archivo css de normalización de estilos*/
 @import "normalize.css";
 
+/*Se importa la fuente*/
+@font-face {
+    font-family: sans-serif;
+    src: url(https://fonts.google.com/specimen/Raleway);
+}
+
 /*I. Estilo aplicado a todo el documento*/
 * {
     font-family: 'Raleway', sans-serif;
