@@ -97,6 +97,7 @@ nav a:active {
 
 /*IV. ESTILOS COMPARTIDOS ENTRE LAS PÁGINAS*/
 /*Se indica el estilo compartido*/
+    
     /*Contenedor de main y aside*/
 .contenido {
     min-height: auto;
@@ -443,9 +444,7 @@ button {
     transform-origin: center center;
     transform: scale(1);
     scroll-snap-align: center;
-}
-
-    
+} 
 .boton {
     position: absolute;
     top: 48%;
