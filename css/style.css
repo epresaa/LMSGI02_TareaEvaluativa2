@@ -30,14 +30,13 @@
 /*Se importa el archivo css de normalización de estilos*/
 @import "normalize.css";
 
-/**/
+/*Se importa la fuente de Google Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 /*I. Estilo aplicado a todo el documento*/
 * {
     font-family: 'Raleway', sans-serif;
 }
-
 body {
     background-image: url("../media/background-foto-mosaico.jpg");
     background-size: cover;
