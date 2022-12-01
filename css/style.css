@@ -42,6 +42,9 @@ body {
     background-size: cover;
     background-color: white;
 }
+html {
+    font-size: 100%;
+}
 
 /*II. TITULO: presente en todas las páginas del sitio web*/
 .titulo {
